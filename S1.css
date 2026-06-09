@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.header{
+    height: 750px;
+    background-image: url(images/black-background-01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white ;
+
+}
+
+.nav{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 60px;
+}
+.logo{
+
+    height: 55px;
+    width: auto;
+    display: block;
+}
+
+.nav-list {
+
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+a{
+    text-decoration: none;
+}
+.nav-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+
+
+}
+
+.nav-item:hover{
+    color: #bdbdbd;
+    transform: translateY(-2px);
+
+}
+
+.title {
+    font-size: 70px; 
+    margin-top: 150px; 
+    text-align: left;
+    margin-left: 186px;
+
+}
+
+.subtitle {
+    text-align: left;
+    margin: 20px;
+    margin-left: 180px;
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 11px;
+    border-radius: 30px;
+    width: 400px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+.member{
+     text-align: center;
+     padding: 50px 30px;
+}
+.member-item:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 0 40px rgb(114 0 0 / 80%);
+}
+.member-h2{
+    margin: 20px 20px;
+}
+.member-list{
+    list-style-type: none;
+
+}
+.member-item{
+    display: inline-block;
+    width: 350px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 32px rgb(59, 59, 59);
+}
+.member-pic{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.member-name{
+    font-size: 25px;
+    margin-top: 5px;
+}
+.member-bio{
+    padding: 20px;
+    text-align: justify;
+}
+.about{
+    height: 700px;
+    text-align: center;
+    background-image: url(/images/pink-white-01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.about-me{
+    width: 350px;
+    text-align: center;
+    margin: auto;
+}
+.about-pic{
+    width: 150px;
+    border: 2px solid rgb(222, 78, 78);
+    border-radius: 50%;
+    box-shadow: 0 0 32px rgb(114 0 0 / 80%);
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.about-bio{
+    width: 350px;
+    text-align: center;
+    text-align: justify;
+    color: rgb(114 0 0 / 80%);
+    text-shadow: 0 0 20px rgb(107, 104, 104);
