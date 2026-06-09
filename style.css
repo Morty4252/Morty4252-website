@@ -67,13 +67,10 @@ body {
   width: 400px;
   margin-top: 20px;
   margin-left: 180px;
-
   padding: 12px;
   border-radius: 30px;
-
   background: rgba(255, 255, 255, .08);
   border: 1px solid rgba(255, 255, 255, .2);
-
   backdrop-filter: blur(40px);
   -webkit-backdrop-filter: blur(40px);
 }
@@ -96,13 +93,9 @@ body {
 .member-item {
   display: inline-block;
   width: 350px;
-
   border-radius: 20px;
-
   box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
-
   overflow: hidden;
-
   transition: .3s;
 }
 
@@ -136,11 +129,8 @@ body {
   max-width: 500px;
   margin: 20px auto;
   padding: 25px;
-
   border-radius: 15px;
-
   background: white;
-
   box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
 }
 
