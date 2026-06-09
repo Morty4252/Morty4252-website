@@ -12,11 +12,9 @@
   background-size: cover;
   background-position: center;
   color: white;
-
 }
 
 .nav {
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -24,14 +22,12 @@
 }
 
 .logo {
-
   height: 55px;
   width: auto;
   display: block;
 }
 
 .nav-list {
-
   list-style: none;
   display: flex;
   gap: 25px;
@@ -46,14 +42,11 @@ a {
   cursor: pointer;
   color: white;
   transition: 0.3s;
-
-
 }
 
 .nav-item:hover {
   color: #bdbdbd;
   transform: translateY(-2px);
-
 }
 
 .title {
@@ -61,7 +54,6 @@ a {
   margin-top: 150px;
   text-align: left;
   margin-left: 186px;
-
 }
 
 .subtitle {
@@ -123,11 +115,10 @@ a {
 .about {
   height: 700px;
   text-align: center;
-  background-image: url(/images/pink-white-01.png);
+  background-image: url(images/pink-white-01.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
 }
 
 .about-me {
