@@ -1,137 +1,206 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
-.header {
-  height: 750px;
-  background-image: url(images/black-background-01.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  color: white;
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.6;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 25px 60px;
+/* HEADER */
+
+.header{
+    min-height:100vh;
+    background-image:url(images/Asset.png);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    color:white;
 }
 
-.logo {
-  height: 55px;
-  width: auto;
-  display: block;
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 60px;
+
+    background:rgba(0,0,0,.15);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
 }
 
-.nav-list {
-  list-style: none;
-  display: flex;
-  gap: 25px;
+.logo{
+    height:55px;
 }
 
-a {
-  text-decoration: none;
+.nav-list{
+    display:flex;
+    list-style:none;
+    gap:10px;
 }
 
-.nav-item {
-  padding: 10px 15px;
-  cursor: pointer;
-  color: white;
-  transition: 0.3s;
+.nav-item a{
+    color:white;
+    text-decoration:none;
+    padding:12px 18px;
+    border-radius:30px;
+    transition:.3s;
 }
 
-.nav-item:hover {
-  color: #bdbdbd;
-  transform: translateY(-2px);
+.nav-item a:hover{
+    background:rgba(255,255,255,.12);
 }
 
-.title {
-  font-size: 70px;
-  margin-top: 150px;
-  text-align: left;
-  margin-left: 186px;
+.hero{
+    padding-top:140px;
 }
 
-.subtitle {
-  text-align: left;
-  margin: 20px;
-  margin-left: 180px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 11px;
-  border-radius: 30px;
-  width: 400px;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(40px);
-  -webkit-backdrop-filter: blur(40px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+.title{
+    font-size:70px;
+    margin-left:180px;
 }
 
-.member {
-  text-align: center;
-  padding: 50px 30px;
+.subtitle{
+    width:400px;
+    margin-top:20px;
+    margin-left:180px;
+
+    padding:12px;
+    border-radius:30px;
+
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.2);
+
+    backdrop-filter:blur(40px);
+    -webkit-backdrop-filter:blur(40px);
 }
 
-.member-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0 40px rgb(114 0 0 / 80%);
+/* MEMBERS */
+
+.member{
+    text-align:center;
+    padding:70px 20px;
 }
 
-.member-h2 {
-  margin: 20px 20px;
+.member-h2{
+    margin-bottom:30px;
 }
 
-.member-list {
-  list-style-type: none;
-
+.member-list{
+    list-style:none;
 }
 
-.member-item {
-  display: inline-block;
-  width: 350px;
-  margin: 10px;
-  border-radius: 20px;
-  box-shadow: 0 0 32px rgb(59, 59, 59);
+.member-item{
+    display:inline-block;
+    width:350px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+    overflow:hidden;
+
+    transition:.3s;
 }
 
-.member-pic {
-  width: 100%;
-  border-radius: 20px 20px 0 0;
+.member-item:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
 }
 
-.member-name {
-  font-size: 25px;
-  margin-top: 5px;
+.member-pic{
+    width:100%;
 }
 
-.member-bio {
-  padding: 20px;
-  text-align: justify;
+.member-name{
+    margin-top:10px;
 }
 
-.about {
-  height: 700px;
-  text-align: center;
-  background-image: url(images/pink-white-01.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.member-bio{
+    padding:20px;
+    text-align:justify;
 }
 
-.about-me {
-  width: 350px;
-  text-align: center;
-  margin: auto;
+/* PROJECTS */
+
+.projects{
+    padding:70px 20px;
+    text-align:center;
+    background:#f7f7f7;
 }
 
-.about-pic {
-  width: 150px;
-  border: 2px solid rgb(222, 78, 78);
-  border-radius: 50%;
-  box-shadow: 0 0 32px rgb(114 0 0 / 80%);
-  margin-top: 80px;
-  margin-bottom: 20px;
+.project-card{
+    max-width:500px;
+    margin:20px auto;
+    padding:25px;
+
+    border-radius:15px;
+
+    background:white;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+/* ABOUT */
+
+.about{
+    padding:70px 20px;
+    text-align:center;
+}
+
+.about p{
+    max-width:700px;
+    margin:auto;
+}
+
+/* CONTACT */
+
+.contact{
+    padding:70px 20px;
+    text-align:center;
+    background:#f7f7f7;
+}
+
+/* FOOTER */
+
+.footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .nav{
+        flex-direction:column;
+        gap:20px;
+        padding:20px;
+    }
+
+    .nav-list{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .title{
+        font-size:45px;
+        text-align:center;
+        margin-left:0;
+    }
+
+    .subtitle{
+        width:90%;
+        margin:20px auto;
+        text-align:center;
+    }
+
+    .member-item{
+        width:90%;
+    }
 }
