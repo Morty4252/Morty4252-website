@@ -5,19 +5,34 @@
   scroll-behavior: smooth;
 }
 
+:root {
+  --bg: #07070D;
+  --card: #11111B;
+  --accent: #8B5CF6;
+  --text: #FFFFFF;
+  --text-muted: #A1A1AA;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
+  background: var(--bg);
+  color: var(--text);
 }
 
 /* HEADER */
 
 .header {
   min-height: 100vh;
-  background-image: url(images/Asset.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background:
+  radial-gradient(
+    circle at top,
+    rgba(120, 80, 255, .25) 0%,
+    rgba(120, 80, 255, .08) 25%,
+    transparent 60%
+  ),
+  #07070d;
+
   color: white;
 }
 
@@ -51,7 +66,7 @@ body {
 }
 
 .nav-item a:hover {
-  background: rgba(255, 255, 255, .12);
+  background: var(--accent);
 }
 
 .hero {
@@ -80,6 +95,7 @@ body {
 .member {
   text-align: center;
   padding: 70px 20px;
+  background: var(--bg);
 }
 
 .member-h2 {
@@ -94,9 +110,15 @@ body {
   display: inline-block;
   width: 350px;
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
   overflow: hidden;
   transition: .3s;
+
+  background: var(--card);
+  color: var(--text);
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  box-shadow: 0 10px 30px rgba(0,0,0,.3);
 }
 
 .member-item:hover {
@@ -122,7 +144,7 @@ body {
 .projects {
   padding: 70px 20px;
   text-align: center;
-  background: #f7f7f7;
+  background: var(--bg);
 }
 
 .project-card {
@@ -130,8 +152,11 @@ body {
   margin: 20px auto;
   padding: 25px;
   border-radius: 15px;
-  background: white;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+
+  background: var(--card);
+  color: var(--text);
+
+  border: 1px solid rgba(255,255,255,.08);
 }
 
 /* ABOUT */
@@ -141,9 +166,10 @@ body {
   text-align: center;
 }
 
-.about p {
-  max-width: 700px;
-  margin: auto;
+.about {
+  padding: 70px 20px;
+  text-align: center;
+  background: var(--bg);
 }
 
 /* CONTACT */
@@ -151,16 +177,17 @@ body {
 .contact {
   padding: 70px 20px;
   text-align: center;
-  background: #f7f7f7;
+  background: var(--bg);
 }
 
 /* FOOTER */
 
 .footer {
-  background: #111;
-  color: white;
+  background: #09090f;
+  color: var(--text-muted);
   text-align: center;
   padding: 30px;
+  border-top: 1px solid rgba(255,255,255,.08);
 }
 
 /* RESPONSIVE */
